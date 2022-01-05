@@ -17,13 +17,14 @@ body {
 }
 
 /* Logo */
-.logo {
+.logo-up {
   color: var(--title-text-color);
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo:hover {
+.logo-up:hover,
+.logo-down:hover {
   color: var(--accent-color);
 }
 /* навигация */
@@ -33,6 +34,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  cursor: pointer;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -44,17 +46,26 @@ body {
   letter-spacing: 0.02em;
   font-size: 14px;
   line-height: 1.14;
+  cursor: pointer;
 }
 .site-communicate .link:hover,
 .site-communicate .link:focus {
   color: var(--accent-color);
 }
 
-.address {
+.footer {
   color: var(--white-color);
+  background-color: #2f303a;
+}
+.logo-down {
+  color: var(--white-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.address {
   font-size: 14px;
   line-height: 1.7;
-  background-color: #2f303a;
 }
 .address .link {
   color: rgba(255, 255, 255, 0.6);
@@ -107,4 +118,32 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* portfolio.html */
+.list-button .filter {
+  color: var(--title-text-color);
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.list-button .filter:hover,
+.list-button .filter:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
+}
+
+.section-skills .title-skills {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.skills {
+  font-size: 16px;
+  line-height: 1.9;
 }
