@@ -38,11 +38,6 @@ body {
   line-height: 1.19;
 }
 
-.logo-up:hover,
-.logo-down:hover,
-.Web:hover {
-  color: var(--accent-color);
-}
 /* навигация */
 .site-nav .link {
   color: var(--title-text-color);
@@ -107,6 +102,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.86;
+  cursor: pointer;
 }
 
 .button.hero:hover,
