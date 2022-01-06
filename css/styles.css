@@ -31,8 +31,16 @@ body {
   line-height: 1.19;
 }
 
+.Web {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .logo-up:hover,
-.logo-down:hover {
+.logo-down:hover,
+.Web:hover {
   color: var(--accent-color);
 }
 /* навигация */
