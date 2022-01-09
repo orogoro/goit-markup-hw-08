@@ -8,12 +8,16 @@
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --dark-background-color: #2f303a;
+  --primery-background-color: #e5e5e5;
 }
 
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--white-color);
 }
 
 /* Logo */
@@ -22,13 +26,14 @@ body {
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
-
+  text-decoration: none;
 }
 .logo-down {
   color: var(--white-color);
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .Web {
@@ -39,61 +44,86 @@ body {
 }
 
 /* навигация */
-.site-nav .link {
+.site-nav,
+.site-communicate {
+  list-style: none;
+}
+
+.focus a.active {
+  color: var(--accent-color);
+}
+
+.site-nav .link-nav {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   cursor: pointer;
+  text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link-nav:hover,
+.site-nav .link-nav:focus {
   color: var(--accent-color);
 }
 /* контакты */
-.site-communicate .link {
+.site-communicate .link-communicate {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   cursor: pointer;
+  text-decoration: none;
 }
-.site-communicate .link:hover,
-.site-communicate .link:focus {
+.site-communicate .link-communicate:hover,
+.site-communicate .link-communicate:focus {
   color: var(--accent-color);
 }
 
+/* подвал */
 .footer {
   color: var(--white-color);
-  background-color: #2f303a;
+  background-color: var(--dark-background-color);
 }
+
+.address-list {
+  list-style: none;
 }
+/* адресс */
 .address {
   font-size: 14px;
   line-height: 1.7;
 }
 .address .link {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .address .link:hover,
 .address .link:focus {
-  color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* index.html */
 
 /* Hero надпись */
+
+.hero-section {
+  background-color: var(--dark-background-color);
+}
 .title-hero {
   color: var(--white-color);
-  background-color: #2f303a;
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
 }
 /* Hero button */
+.hero-div {
+  text-align: center;
+}
 .button.hero {
   color: var(--white-color);
   letter-spacing: 0.06em;
@@ -107,18 +137,34 @@ body {
 
 .button.hero:hover,
 .button.hero:focus {
-background-color: #188CE8;
+  background-color: #188ce8;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  list-style: none;
 }
 
 /* section-title */
 .section.title-one {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
-.section-hero {
+.text-one {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.section-team {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -130,17 +176,36 @@ background-color: #188CE8;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 /* portfolio.html */
+
+.list-button {
+  list-style: none;
+}
+/* list-button */
 .list-button .filter {
   color: var(--title-text-color);
-  background: #f5f4fa;
+  background: var(--secondary-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  cursor: pointer;
+}
+/* кнопка Все */
+.button-all {
+  color: var(--white-color);
+  background: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 .list-button .filter:hover,
 .list-button .filter:focus {
@@ -148,6 +213,13 @@ background-color: #188CE8;
   background: var(--accent-color);
 }
 
+.section-skills {
+  list-style: none;
+}
+.link-skills {
+  text-decoration: none;
+}
+/* section-skills */
 .section-skills .title-skills {
   color: var(--title-text-color);
   font-weight: bold;
@@ -156,6 +228,7 @@ background-color: #188CE8;
   letter-spacing: 0.06em;
 }
 .skills {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
 }
