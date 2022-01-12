@@ -86,6 +86,7 @@ body {
   color: var(--white-color);
   background-color: var(--dark-background-color);
 }
+
 .footer a {
   cursor: default;
 }
