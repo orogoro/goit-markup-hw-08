@@ -32,6 +32,10 @@ ul {
   margin-bottom: 0;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -259,6 +263,10 @@ ul {
   align-self: center;
   justify-content: space-between;
 }
+.section-two .item-img {
+  display: block;
+  width: 370px;
+}
 .section-two .item + .item {
   margin-left: 30px;
 }
@@ -297,6 +305,9 @@ ul {
 }
 .section-three .item + .item {
   margin-left: 30px;
+}
+.item_three {
+  padding: 30px;
 }
 .section-team {
   margin-bottom: 50px;
@@ -380,7 +391,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+/* узнать justify-content: space-between; */
 .section-skills {
   display: flex;
   flex-wrap: wrap;
@@ -404,6 +415,13 @@ ul {
 .link-skills {
   text-decoration: none;
 }
+/* узнать почему есть отступ  */
+.all-title {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px;
+}
 
 /* section-skills */
 .section-skills .title-skills {
@@ -413,7 +431,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20px;
+  /*  margin-top: 20px; */
   margin-bottom: 4px;
 }
 .skills {
