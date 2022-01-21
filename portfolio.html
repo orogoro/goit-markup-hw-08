@@ -15,27 +15,29 @@
   <body>
     <!-- Шапка -->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="" class="logo-up"><span class="Web">Web</span>Studio</a>
           <div class="focus">
             <ul class="site-nav list">
-              <li><a href="./index.html" class="link-nav">Студия</a></li>
-              <li>
+              <li class="item">
+                <a href="./index.html" class="link-nav">Студия</a>
+              </li>
+              <li class="item">
                 <a href="./portfolio.html" class="link-nav active">Портфолио</a>
               </li>
-              <li><a href="" class="link-nav">Контакты</a></li>
+              <li class="item"><a href="" class="link-nav">Контакты</a></li>
             </ul>
           </div>
         </nav>
 
         <ul class="site-communicate list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link-communicate"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link-communicate"
               >+38 096 111 11 11</a
             >
@@ -49,32 +51,32 @@
       <section class="section">
         <div class="container">
           <ul class="list-button">
-            <li>
+            <li class="item">
               <button type="button" class="button-all">Все</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="filter">Веб-сайты</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="filter">Приложения</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="filter">Дизайн</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button" class="filter">Маркетинг</button>
             </li>
           </ul>
           <!-- список с Картинками -->
           <ul class="section-skills">
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img src="./Images/sec12.jpg" alt="Технокряк" width="370" />
                 <h3 class="title-skills">Технокряк</h3>
                 <p class="skills">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/sec11.jpg"
@@ -85,7 +87,7 @@
                 <p class="skills">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/sec1.jpg"
@@ -96,14 +98,14 @@
                 <p class="skills">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img src="./Images/sec23.jpg" alt="Проект Prime" width="370" />
                 <h3 class="title-skills">Проект Prime</h3>
                 <p class="skills">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/sec2.jpg"
@@ -114,7 +116,7 @@
                 <p class="skills">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/sec22.jpg"
@@ -125,7 +127,7 @@
                 <p class="skills">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/ces3.jpg"
@@ -136,14 +138,14 @@
                 <p class="skills">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img src="./Images/sec33.jpg" alt="Проект LAB" width="370" />
                 <h3 class="title-skills">Проект LAB</h3>
                 <p class="skills">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="" class="link-skills">
                 <img
                   src="./Images/sec32.jpg"
@@ -160,18 +162,20 @@
     </main>
 
     <!-- Адресс -->
-    <footer class="footer">
+<footer class="footer">
+   <div class="container">
       <a href="" class="logo-down"><span class="Web">Web</span>Studio</a>
       <address class="address">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <ul class="address-list">
-          <li>
+          <li class="item">
             <a href="mailto:info@example.com" class="link">info@example.com</a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 099 111 11 11</a>
           </li>
         </ul>
+        </div>
       </address>
     </footer>
   </body>
