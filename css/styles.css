@@ -32,17 +32,22 @@ ul {
   margin-bottom: 0;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
-  outline: 4px solid red;
+  /*   outline: 4px solid red; */
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
 }
 
 .section {
@@ -73,10 +78,6 @@ ul {
   line-height: 1.19;
 }
 /* main-nav */
-/* 
--задать вопрос по поводу див и нав 
--почему прыгает навигация между страницами
-*/
 
 .main-nav {
   display: flex;
@@ -240,35 +241,45 @@ ul {
   padding-right: 0;
   list-style: none;
 }
-/* justify-content: space-between; скорее всего не правильно, спросить */
+
 .section-one {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .section-one .item {
   width: 270px;
 }
 
-.section-one .item + .item {
-  margin-left: 30px;
+.section-one .item {
+  /*   margin-left: 30px; */
+  margin-left: auto;
+}
+.section-one .item:first-child {
+  margin-left: 0;
+}
+.section-one .item:last-child {
+  margin-right: 0;
 }
 
 .two-team {
   padding-top: 0;
 }
-/* тоже самое просить justify-content: space-between; */
+
 .section-two {
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
+.section-two .cover {
+  display: block;
+}
+
 .section-two .item-img {
   display: block;
-  width: 370px;
 }
 .section-two .item + .item {
-  margin-left: 30px;
+  /*  margin-left: 30px; */
+  margin-left: auto;
 }
 
 /* section-title */
@@ -295,7 +306,10 @@ ul {
 .section-three {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.section-three .cover {
+  display: block;
 }
 .section-three .item {
   background-color: var(--white-color);
@@ -303,9 +317,19 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.section-three .item + .item {
-  margin-left: 30px;
+.section-three .item {
+  /* margin-left: 30px; */
+  margin: auto;
 }
+
+.section-three .item:first-child {
+  margin-left: 0;
+}
+
+.section-three .item:last-child {
+  margin-right: 0;
+}
+
 .item_three {
   padding: 30px;
 }
@@ -414,6 +438,9 @@ ul {
 
 .link-skills {
   text-decoration: none;
+}
+.link-skills .cover {
+  display: block;
 }
 /* узнать почему есть отступ  */
 .all-title {
