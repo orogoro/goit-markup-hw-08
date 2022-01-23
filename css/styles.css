@@ -37,7 +37,7 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   /*   outline: 4px solid red; */
 }
 
@@ -45,10 +45,10 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header__inner {
+/* .header__inner {
   display: flex;
   align-items: center;
-}
+} */
 
 .section {
   padding-top: 94px;
@@ -164,6 +164,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+.address-list {
+  margin-top: 9px;
+}
 
 .address-list .item {
   margin-top: 9px;
@@ -198,11 +201,15 @@ ul {
 .title-hero {
   margin-top: 0;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
   color: var(--white-color);
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -215,6 +222,7 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+  margin-top: 30px;
 
   color: var(--white-color);
   letter-spacing: 0.06em;
@@ -317,18 +325,18 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.section-three .item {
-  /* margin-left: 30px; */
-  margin: auto;
+.section-three .item + .item {
+  margin-left: 30px;
+  /* margin: auto; */
 }
 
-.section-three .item:first-child {
+/* .section-three .item:first-child {
   margin-left: 0;
 }
 
 .section-three .item:last-child {
   margin-right: 0;
-}
+} */
 
 .item_three {
   padding: 30px;
@@ -362,8 +370,12 @@ ul {
   justify-content: center;
   list-style: none;
   padding: 0;
+
   margin-bottom: 50px;
 }
+/* .list-button .item {
+  margin: auto;
+} */
 
 .list-button .item + .item {
   margin-left: 8px;
@@ -415,11 +427,10 @@ ul {
   list-style: none;
   padding: 0;
 }
-/* узнать justify-content: space-between; */
+
 .section-skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .flex-element {
