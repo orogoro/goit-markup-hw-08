@@ -156,7 +156,8 @@ ul {
   background-color: var(--dark-background-color);
 }
 
-.footer a {
+.footer a,
+p {
   cursor: default;
 }
 
