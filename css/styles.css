@@ -99,7 +99,7 @@ ul {
   margin-left: 50px;
 }
 
-.focus a.active {
+.site-nav a.active {
   color: var(--accent-color);
 }
 
@@ -184,10 +184,10 @@ p {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.address .link:hover,
+/* .address .link:hover,
 .address .link:focus {
   color: var(--white-color);
-}
+} */
 
 /* index.html */
 
@@ -215,15 +215,17 @@ p {
   text-transform: uppercase;
 }
 /* Hero button */
-.hero-div {
+/* .hero-div {
   text-align: center;
-}
+} */
 .button.hero {
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--white-color);
   letter-spacing: 0.06em;
