@@ -11,6 +11,7 @@
   --secondary-background-color: #f5f4fa;
   --dark-background-color: #2f303a;
   --primery-background-color: #e5e5e5;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -44,11 +45,6 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
-/* .header__inner {
-  display: flex;
-  align-items: center;
-} */
 
 .section {
   padding-top: 94px;
@@ -138,11 +134,22 @@ ul {
   display: flex;
   margin-left: auto;
 }
+
+/* .link-communicate > .icon {
+  display: block;
+  margin-right: 10px;
+  padding-left: 20px;
+  background-image: url(../Images/icons.svg/mail.svg);
+  border-style: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+} */
+
 .site-communicate .item + .item {
   margin-left: 50px;
 }
 
-.site-communicate .site-communicate .link-communicate:hover,
+.site-communicate .link-communicate:hover,
 .site-communicate .link-communicate:focus {
   color: var(--accent-color);
 }
@@ -194,12 +201,30 @@ p {
 
 /* Hero надпись */
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../Images/ImgAll.jpg);
+
+  /*   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-top: 0;
   background-color: var(--dark-background-color);
 }
+
 .title-hero {
   margin-top: 0;
   margin-bottom: 40px;
@@ -256,10 +281,38 @@ p {
 
 .section-one {
   display: flex;
-  /* justify-content: space-between; */
 }
+
 .section-one .item {
   width: 270px;
+}
+
+.section-one .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../Images/icons.svg/antenna\ 1\ 14.01.44.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../Images/icons.svg/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../Images/icons.svg/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../Images/icons.svg/astronaut1.svg);
 }
 
 .section-one .item {
@@ -345,6 +398,42 @@ p {
 .item_three {
   padding: 30px;
 }
+
+.icon-list {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  width: 206px;
+  height: 44px;
+  margin-top: 16px;
+}
+
+.link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  /* background-color: var(--white-color); */
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.link-social:hover {
+  background-color: var(--accent-color);
+}
+
+.link-icon {
+  fill: var(--icons-color);
+}
+
+.link-icon:hover {
+  fill: var(--white-color);
+  /* background-color: var(--accent-color); */
+}
+
+.icon-list .list-icon + .list-icon {
+  margin-left: 10px;
+}
+
 .section-team {
   margin-bottom: 50px;
   color: var(--title-text-color);
