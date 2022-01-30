@@ -154,7 +154,6 @@ ul {
 }
 
 .icon-contact {
-  width: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
@@ -609,7 +608,7 @@ p {
 }
 
 .flex-element {
-  width: 370;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
