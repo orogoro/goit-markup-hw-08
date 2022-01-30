@@ -16,12 +16,13 @@
   <body>
     <!-- Шапка -->
     <header class="header">
+   <header class="header">
       <div class="container main-nav">
-        <!-- <div class="header__inner"> -->
           <nav class="main-nav">
             <a href="" class="logo-up"><span class="Web">Web</span>Studio</a>
+            
             <ul class="site-nav list">
-              <li class="item"><a href="./index.html" class="link-nav  ">Студия</a></li>
+              <li class="item"><a href="./index.html" class="link-nav">Студия</a></li>
               <li class="item"><a href="./portfolio.html" class="link-nav active">Портфолио</a></li>
               <li class="item"><a href="" class="link-nav">Контакты</a></li>
             </ul>
@@ -29,14 +30,21 @@
 
           <ul class="site-communicate list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link-communicate"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="link-communicate">
+                <svg class="icon-contact" widht="16" height="12">
+                  <use href="Images/icon.svg#icon-mail"> </use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li class="item">
               <a href="tel:+380961111111" class="link-communicate"
-                >+38 096 111 11 11</a
-              >
+                >
+                <svg class="icon-contact" widht="10" height="16">
+                  <use href="Images/icon.svg#icon-phone"> </use>
+                </svg>
+                +38 096 111 11 11
+                </a>
             </li>
           </ul>
         </div>
@@ -178,9 +186,11 @@
 
     <!-- Адресс -->
 <footer class="footer">
-   <div class="container">
-      <a href="" class="logo-down"><span class="Web">Web</span>Studio</a>
-      <address class="address">
+   <div class="container down">
+
+    <div class="col">
+       <a href="" class="logo-down"><span class="Web">Web</span>Studio</a>
+       <address class="address">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <ul class="address-list">
           <li>
@@ -189,9 +199,47 @@
           <li class="item">
             <a href="tel:+380961111111" class="link">+38 099 111 11 11</a>
           </li>
-        </ul>
-        </div>
+        </ul>       
       </address>
+     </div>
+      
+
+     <div class="col">
+        <div class="container-address">
+          <p class="address-call">присоединяйтесь</p>
+          <ul class="ticon-list">
+                    <li class="tlist-icon" >
+                      <a class="tlink-social" href="">
+                        <svg class="tlink-icon" width="20" height="20">
+                          <use href="./Images/icon.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="tlist-icon" >
+                      <a class="tlink-social" href="">
+                        <svg class="tlink-icon" width="20" height="20">
+                          <use href="Images/icon.svg#icon-twitter" ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="tlist-icon" >
+                      <a class="tlink-social" href="">
+                         <svg class="tlink-icon" width="20" height="20">
+                          <use href="Images/icon.svg#icon-facebook" ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="tlist-icon" >
+                      <a class="tlink-social" href="">
+                         <svg class="tlink-icon" width="20" height="20">
+                          <use href="Images/icon.svg#icon-linkedin" ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+         </div>
+     </div>
+      
     </footer>
   </body>
 </html>

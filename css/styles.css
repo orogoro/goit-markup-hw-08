@@ -150,7 +150,7 @@ ul {
 }
 
 .item:hover .icon-contact {
-  fill: var(--accent-colore);
+  fill: var(--accent-color);
 }
 
 .icon-contact {
