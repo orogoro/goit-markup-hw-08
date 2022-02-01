@@ -218,6 +218,7 @@ p {
 .address-call {
   text-transform: uppercase;
   font-size: 14px;
+  margin: 0;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -497,6 +498,14 @@ p {
   text-align: center;
 }
 
+.link-partners {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+}
+
 .list-partners {
   display: flex;
   list-style: none;
@@ -504,11 +513,6 @@ p {
   margin-top: 50px;
 }
 .list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -614,7 +618,8 @@ p {
   margin-bottom: 0;
 }
 
-.link-skills:hover {
+.link-skills:hover,
+.link-skills:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
