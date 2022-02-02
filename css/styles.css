@@ -261,6 +261,60 @@ p {
 
 /* index.html */
 
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.close-button {
+  position: absolute;
+  margin-right: 8px;
+  margin-top: 8px;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-close {
+  width: 18px;
+  height: 18px;
+}
+
 /* Hero надпись */
 
 .overlay {
@@ -388,6 +442,38 @@ p {
 .section-two .item + .item {
   /*  margin-left: 30px; */
   margin-left: auto;
+}
+
+.inscription {
+  position: relative;
+}
+
+.inscription::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+
+  bottom: 0;
+  left: 0;
+
+  height: 70px;
+  width: 370px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.text-inscription {
+  position: absolute;
+
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 /* section-title */
@@ -602,6 +688,52 @@ p {
 .section-skills {
   display: flex;
   flex-wrap: wrap;
+}
+
+.product-actions {
+  position: relative;
+  max-width: 370px;
+  max-height: 294px;
+  overflow: hidden;
+}
+
+.product-actions::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.product-actions:hover::before {
+  opacity: 1;
+}
+
+.test {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /*  opacity: 0; */
+}
+
+/* .test:hover {
+  opacity: 1;
+} */
+
+.description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  /*   color: var(--white-color); */
 }
 
 .flex-element {

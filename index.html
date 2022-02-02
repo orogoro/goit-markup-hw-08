@@ -58,9 +58,21 @@
       <section class="hero-section overlay">
         <div class="container">
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button hero">Заказать услугу</button>
+          <button type="button" class="button hero" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" data-modal-close>
+            <svg class="img-close">
+              <use href="./Images/symbol-close.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <section class="section">
         <div class="container">
@@ -122,13 +134,17 @@
           <h2 class="section-team">Чем мы занимаемся</h2>
           <ul class="section-two">
             <li class="item">
-              <img
-                class="cover item-img"
-                src="./Images/Foto3.jpg"
-                alt="Attention to detail"
-                width="370"
-              />
+              <div class="inscription">
+                <img
+                  class="cover item-img"
+                  src="./Images/Foto3.jpg"
+                  alt="Attention to detail"
+                  width="370"
+                />
+                <div class="text-inscription">Десктопные приложения</div>
+              </div>
             </li>
+
             <li class="item">
               <img
                 class="cover item-img"
@@ -442,5 +458,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
