@@ -463,10 +463,10 @@ p {
 
 .text-inscription {
   position: absolute;
-
+  width: 100%;
   left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10%;
+  transform: translate(-25%, 0);
 
   font-weight: 700;
   font-size: 14px;
@@ -691,6 +691,7 @@ p {
 }
 
 .product-actions {
+  display: flex;
   position: relative;
   max-width: 370px;
   max-height: 294px;
@@ -711,7 +712,7 @@ p {
   opacity: 1;
 }
 
-.test {
+.content {
   display: inline-block;
   position: absolute;
   width: 100%;
@@ -719,6 +720,8 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
 
   /*  opacity: 0; */
 }
@@ -733,7 +736,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.03em;
 
-  /*   color: var(--white-color); */
+  /* color: var(--white-color); */
 }
 
 .flex-element {
