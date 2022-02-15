@@ -71,6 +71,64 @@
               <use href="./Images/symbol-close.svg#icon-close"></use>
             </svg>
           </button>
+
+          <div class="group">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <form class="form" action="">
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" class="form-input" name="name" id="name" />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./Images/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" class="form-input" name="tel" id="tel" />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./Images/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label for="mail">Почта</label>
+                <input type="email" class="form-input" name="mail" id="mail" />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./Images/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="comment"
+                  rows="8"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+
+              <div class="form-label">
+                <label class="label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="topic"
+                    value="agreement"
+                    id="agreement"
+                  />
+                  <span class="cech"></span>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href=""> Условия договора</a>
+                </label>
+              </div>
+
+              <button class="button-submit" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -461,6 +519,22 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="col">
+          <p class="address-call">Подпишитесь на рассылку</p>
+          <form class="form-email" action="">
+            <label for="email"></label>
+            <input type="email" name="mail" id="email" placeholder="E-mail" />
+            <div class="button-col">
+              <button class="button-email" type="submit">
+                Отправить
+                <svg class="icon-send" width="24px" height="24px">
+                  <use href="./Images/symbol-moda.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
