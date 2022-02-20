@@ -639,8 +639,9 @@ textarea {
   display: flex;
 }
 
-.section-peculiarities .section-peculiarities__item {
+.section-peculiarities__item {
   width: 270px;
+  margin-left: auto;
 }
 .section-peculiarities__media {
   display: flex;
@@ -669,9 +670,6 @@ textarea {
   line-height: 1.7;
 }
 
-.section-peculiarities .section-peculiarities__item {
-  margin-left: auto;
-}
 .section-peculiarities .section-peculiarities__item:first-child {
   margin-left: 0;
 }
@@ -786,10 +784,6 @@ textarea {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
-}
-
-.item-cards__link {
   fill: var(--icons-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

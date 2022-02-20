@@ -1,0 +1,45 @@
+/* Section-peculiarities */
+
+.section-peculiarities {
+  @extend %section;
+  display: flex;
+
+  &__item {
+    width: 270px;
+    margin-left: auto;
+
+    &__item:first-child {
+      margin-left: 0;
+    }
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__media {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-background-color;
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
