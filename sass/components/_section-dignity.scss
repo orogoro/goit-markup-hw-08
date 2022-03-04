@@ -2,10 +2,17 @@
 
 .two-team {
   padding-top: 0;
+
+  @media screen and(max-width:1200px) {
+    display: none;
+  }
 }
 
 .section-dignity {
   @extend %section;
+  @media screen and(max-width:1200px) {
+    display: none;
+  }
   display: flex;
   flex-wrap: wrap;
 

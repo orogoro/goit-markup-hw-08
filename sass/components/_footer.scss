@@ -6,13 +6,21 @@ p {
 }
 
 .down {
-  display: flex;
   align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   color: $white-color;
   background-color: $dark-background-color;
@@ -48,7 +56,26 @@ p {
 
 .section-footer {
   & + & {
-    margin-left: 70px;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+  }
+
+  & {
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+
+      &:last-child {
+        margin-top: 60px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:last-child {
+        margin-top: 0;
+      }
+    }
   }
 
   &__text {
@@ -101,7 +128,12 @@ p {
 /* Form-footer */
 
 .form-footer input {
-  width: 358px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   height: 50px;
   padding: 15px 16px;
   margin-top: 20px;
@@ -131,11 +163,27 @@ p {
 
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .form-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &__button {
     display: inline-flex;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 
   &__button-mail {
@@ -144,9 +192,13 @@ p {
     justify-content: center;
 
     border-radius: 4px;
+    border: transparent;
     padding: 10px 28px 10px 29px;
     min-width: 200px;
-    margin-left: 12px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
 
     color: $white-color;
     letter-spacing: 0.06em;

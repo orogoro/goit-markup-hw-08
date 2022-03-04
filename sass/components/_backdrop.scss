@@ -30,8 +30,14 @@
   left: 50%;
   top: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   background-color: #fff;
   opacity: 1;
 
@@ -70,7 +76,11 @@
   }
 
   &__group {
-    margin: 40px 39px 40px 41px;
+    margin: 40px 40px 40px 40px;
+    width: 370px;
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
   }
 
   &__title {
@@ -87,7 +97,11 @@
 }
 
 .form {
-  width: 528px;
+  width: 370px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 
   &__field {
     display: flex;
@@ -105,7 +119,13 @@
     & input {
       margin: 0;
       padding: 12px 16px;
-      min-width: 448px;
+
+      min-width: 370px;
+
+      @media screen and (min-width: 1200px) {
+        min-width: 448px;
+      }
+
       min-height: 40px;
       padding-left: 42px;
 
@@ -140,7 +160,11 @@
   }
 
   &__comment {
-    min-width: 448px;
+    min-width: 370px;
+
+    @media screen and (min-width: 1200px) {
+      min-width: 448px;
+    }
 
     padding: 12px 16px;
 
@@ -189,7 +213,12 @@
 
     width: 16px;
     height: 15px;
-    margin-right: 9px;
+
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 9px;
+    }
 
     border: 2px solid $title-text-color;
     border-radius: 2px;
@@ -197,7 +226,10 @@
 
   &__link {
     display: inline;
-    margin-left: 5px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 5px;
+    }
     color: $accent-color;
   }
 }
@@ -207,6 +239,14 @@ textarea {
 }
 
 .label {
+  font-size: 12px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
   display: flex;
   align-items: center;
   margin-left: auto;
