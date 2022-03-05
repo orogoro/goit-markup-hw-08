@@ -21,6 +21,31 @@
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="" class="logo__link"><span class="logo">Web</span>Studio</a>
+          <!-- Бургер  is-open-->
+          <button
+            class="button-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="burger-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close_burger"
+                href="./Images/symbol-burger.svg#icon-close_burger"
+              ></use>
+              <use
+                class="icon-menu_burger"
+                href="./Images/symbol-burger.svg#icon-menu_burger"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="burger-container" id="burger-container"></div>
+
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link active">Студия</a>
