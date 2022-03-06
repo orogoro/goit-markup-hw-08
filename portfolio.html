@@ -21,10 +21,12 @@
     <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
-          <a href="" class="logo__link"><span class="logo">Web</span>Studio</a>
+          <a href="" class="logo__link"> <span class="logo">Web</span>Studio</a>
+
           <!-- Бургер  is-open-->
           <button
-            class="button-burger"
+            class="button-burger is-open"
+            data-menu-button
             type="button"
             aria-expanded="false"
             aria-controls="burger-container"
@@ -45,7 +47,7 @@
             </svg>
           </button>
 
-          <div class="menu-container" id="menu-container">
+          <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav list">
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link">Студия</a>
@@ -76,6 +78,21 @@
                   </svg>
                   +38 096 111 11 11
                 </a>
+              </li>
+            </ul>
+
+            <ul class="site-icon">
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Instagram</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Twitter</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Facebook</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -431,5 +448,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
