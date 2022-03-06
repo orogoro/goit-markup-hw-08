@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -14,54 +15,43 @@
   }
   @media screen and(min-width:768px) {
     display: flex;
+    flex-grow: 1;
   }
+
   align-items: center;
 }
 
-.button-burger {
-  @media screen and(min-width:768px) {
-    display: none;
-  }
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: none;
+/* menu-container */
 
-  /*   & .icon-close_burger {
-    display: none;
-  } */
-}
-
-.button-burger .icon-close_burger {
+.menu-container {
   display: none;
-}
-
-.button-burger.is-open .icon-close_burger {
-  display: block;
-}
-
-.button-burger.is-open .icon-menu_burger {
-  display: none;
-}
-
-.burger-container {
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  height: 400px;
 
   background-color: $white-color;
-  padding: 20px;
-  text-align: center;
+  padding: 48px 40px;
   font-size: 20px;
 
-  &.is-open {
-    display: block;
+  @media screen and(max-width:767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+      height: 796px;
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-grow: 1;
+
+    justify-content: space-between;
+    padding: 0;
+    font-size: 14px;
+    align-items: center;
   }
 }
 
@@ -75,18 +65,31 @@
 
 .site-nav {
   @media screen and(max-width:767px) {
-    display: none;
   }
-
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: 93px;
+  }
   @extend %site;
-  display: flex;
-  margin-left: 93px;
 
   &__item + &__item {
-    margin-left: 50px;
+    @media screen and(max-width:767px) {
+      margin-top: 32px;
+    }
+    @media screen and(min-width:768px) {
+      margin-left: 50px;
+    }
   }
 
   & a.active {
+    @media screen and(max-width:767px) {
+      color: $title-text-color;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
     color: $accent-color;
   }
 
@@ -106,6 +109,12 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and(max-width:767px) {
+      font-size: 40px;
+      line-height: 1.17;
+      padding: 0;
+    }
+
     &:hover,
     &:focus {
       color: $accent-color;
@@ -113,32 +122,37 @@
   }
 
   & a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    @media screen and(min-width:768px) {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
 
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: $accent-color;
-    border-radius: 2px;
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }
 
 /* site-com */
 
 .site-com {
-  @media screen and(max-width:767px) {
-    display: none;
-  }
-
   @media screen and(min-width:1200px) {
     display: flex;
+    /* запасное центрирование списка */
+    /*    margin-top: auto; */
+    /*    margin-bottom: auto; */
+  }
+
+  @media screen and(max-width:767px) {
+    margin-top: 302px;
   }
 
   @extend %site;
-  margin-left: auto;
+  /*   margin-left: auto; */
 
   &__link {
     display: flex;
@@ -163,6 +177,10 @@
     /*   margin-left: 30px; */
     margin-top: 10px;
 
+    @media screen and(max-width:767px) {
+      margin-top: 32px;
+    }
+
     @media screen and(min-width:1200px) {
       margin-top: 0;
       margin-left: 30px;
@@ -177,5 +195,38 @@
     margin-right: 10px;
     fill: $primary-text-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* site-icon */
+
+.site-icon {
+  display: none;
+  @extend %site;
+  display: flex;
+  margin-top: 64px;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+
+  &__item {
+    padding-right: 10px;
+  }
+  &__item + &__item {
+    border-left: 1px solid;
+    padding-left: 10px;
+
+    & + &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    color: $accent-color;
+    text-decoration: none;
+  }
+  &.is-open {
+    display: block;
   }
 }

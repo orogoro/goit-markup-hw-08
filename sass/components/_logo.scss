@@ -1,10 +1,19 @@
 .logo__link {
+  display: block;
+
   color: $title-text-color;
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  /*  &.is-open {
+    display: none;
+  } */
 }
+/* .logo__link .is-open {
+  display: none;
+} */
 .logo-down {
   color: $white-color;
 }

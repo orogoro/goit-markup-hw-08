@@ -1,0 +1,37 @@
+.button-burger {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+  /*   & .icon-close_burger {
+    display: none;
+  } */
+
+  & .icon-menu_burger:hover,
+  & .icon-menu_burger:focus {
+    fill: $accent-color;
+  }
+
+  & .icon-close_burger:hover,
+  & .icon-close_burger:focus {
+    fill: $accent-color;
+  }
+}
+
+.button-burger .icon-menu_burger {
+  display: none;
+}
+
+.button-burger.is-open .icon-menu_burger {
+  display: block;
+}
+
+.button-burger.is-open .icon-close_burger {
+  display: none;
+}

@@ -22,39 +22,64 @@
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="" class="logo__link"><span class="logo">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link active"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <!-- Бургер  is-open-->
+          <button
+            class="button-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="burger-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close_burger"
+                href="./Images/symbol-burger.svg#icon-close_burger"
+              ></use>
+              <use
+                class="icon-menu_burger"
+                href="./Images/symbol-burger.svg#icon-menu_burger"
+              ></use>
+            </svg>
+          </button>
 
-        <ul class="site-com list">
-          <li class="site-com__item">
-            <a href="mailto:info@devstudio.com" class="site-com__link">
-              <svg class="site-com__icon" width="16" height="12">
-                <use href="Images/icon.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="site-com__item">
-            <a href="tel:+380961111111" class="site-com__link">
-              <svg class="site-com__icon" width="10" height="16">
-                <use href="Images/icon.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <div class="menu-container" id="menu-container">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="site-com list">
+              <li class="site-com__item">
+                <a href="mailto:info@devstudio.com" class="site-com__link">
+                  <svg class="site-com__icon" width="16" height="12">
+                    <use href="Images/icon.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="site-com__item">
+                <a href="tel:+380961111111" class="site-com__link">
+                  <svg class="site-com__icon" width="10" height="16">
+                    <use href="Images/icon.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 

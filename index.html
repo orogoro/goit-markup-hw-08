@@ -20,10 +20,12 @@
     <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
-          <a href="" class="logo__link"><span class="logo">Web</span>Studio</a>
+          <a href="" class="logo__link"> <span class="logo">Web</span>Studio</a>
+
           <!-- Бургер  is-open-->
           <button
-            class="button-burger"
+            class="button-burger is-open"
+            data-menu-button
             type="button"
             aria-expanded="false"
             aria-controls="burger-container"
@@ -44,39 +46,54 @@
             </svg>
           </button>
 
-          <div class="burger-container" id="burger-container"></div>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link active">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
 
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link active">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
+            <ul class="site-com list">
+              <li class="site-com__item">
+                <a href="mailto:info@devstudio.com" class="site-com__link">
+                  <svg class="site-com__icon" width="16" height="12">
+                    <use href="Images/icon.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="site-com__item">
+                <a href="tel:+380961111111" class="site-com__link">
+                  <svg class="site-com__icon" width="10" height="16">
+                    <use href="Images/icon.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+
+            <ul class="site-icon">
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Instagram</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Twitter</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">Facebook</a>
+              </li>
+              <li class="site-icon__item">
+                <a href="" class="site-icon__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-
-        <ul class="site-com list">
-          <li class="site-com__item">
-            <a href="mailto:info@devstudio.com" class="site-com__link">
-              <svg class="site-com__icon" width="16" height="12">
-                <use href="Images/icon.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="site-com__item">
-            <a href="tel:+380961111111" class="site-com__link">
-              <svg class="site-com__icon" width="10" height="16">
-                <use href="Images/icon.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -567,5 +584,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
