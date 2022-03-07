@@ -584,6 +584,7 @@ ul {
   position: absolute;
   margin-right: 8px;
   margin-top: 8px;
+  padding: 0;
   right: 0;
   top: 0;
   width: 30px;
@@ -606,6 +607,11 @@ ul {
     @media screen and (min-width: 1200px) {
       width: 528px;
     } */
+  /* svg  кнопка  */
+  /*   &__icon{
+      @media screen and (max-width:767px){
+          z-index: 999;
+      } */
 }
 
 @media screen and (min-width: 600px) {
@@ -823,6 +829,8 @@ textarea {
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Images/ImgAll.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/ImgAll.jpg);
+  /*   background-size: 1600px 600px;
+  background-repeat: no-repeat; */
 }
 
 .hero-section {
