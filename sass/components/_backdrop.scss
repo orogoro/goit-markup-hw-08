@@ -31,8 +31,12 @@
 
 .modal-form {
   position: relative; /* под вопросом для закрытия модального окна в мобайл */
+  max-width: 450px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -93,7 +97,7 @@
   &__group {
     padding: 40px;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
       /*  margin: 40px; */
     }
 
@@ -119,6 +123,11 @@
     margin-bottom: 30px;
 
     color: $title-text-color;
+
+    @media screen and(max-width:341px) {
+      font-size: 18px;
+      line-height: 1.15;
+    }
   }
 }
 
@@ -252,6 +261,9 @@
 
   &__link {
     display: inline;
+    @media screen and (min-width: 768px) {
+      margin-left: 5px;
+    }
 
     @media screen and (min-width: 1200px) {
       margin-left: 5px;
@@ -268,7 +280,20 @@ textarea {
   font-size: 12px;
   line-height: 1.16;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.16;
+    @media screen and (max-width: 426px) {
+      font-size: 8px;
+      line-height: 1.16;
+    }
+    @media screen and (max-width: 372px) {
+      font-size: 6px;
+      line-height: 1.16;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.7;
   }

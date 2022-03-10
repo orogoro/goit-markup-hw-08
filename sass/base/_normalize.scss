@@ -4,6 +4,10 @@ body {
   letter-spacing: 0.03em;
   background-color: $white-color;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -98,4 +102,9 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }

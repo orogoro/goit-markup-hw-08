@@ -40,9 +40,8 @@
 
     &.is-open {
       display: block;
-      height: 855px;
-
-      transform: translateY(-8%);
+      height: 7000px;
+      transform: translateY(-1%);
     }
   }
 
@@ -85,14 +84,14 @@
   }
 
   & a.active {
-    @media screen and(max-width:767px) {
+    /*     @media screen and(max-width:767px) {
       color: $title-text-color;
 
       &:hover,
       &:focus {
         color: $accent-color;
       }
-    }
+    } */
     color: $accent-color;
   }
 
@@ -164,6 +163,10 @@
       font-size: 34px;
       line-height: 1.17;
       color: $accent-color;
+      @media screen and(max-width:380px) {
+        font-size: 26px;
+        line-height: 1.17;
+      }
     }
 
     &__mail {
@@ -252,6 +255,14 @@
   &__item {
     padding-right: 10px;
     margin-top: 5px;
+    @media screen and(max-width:768px) {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+    @media screen and(max-width:440px) {
+      font-size: 10px;
+      line-height: 1.22;
+    }
   }
   &__item + &__item {
     border-left: 1px solid;

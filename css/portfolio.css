@@ -6,6 +6,11 @@ body {
   background-color: #ffffff;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -102,6 +107,13 @@ ul {
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .container__title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -161,9 +173,9 @@ ul {
   }
   .menu-container.is-open {
     display: block;
-    height: 855px;
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%);
+    height: 7000px;
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
   }
 }
 
@@ -215,16 +227,15 @@ ul {
 }
 
 .site-nav a.active {
-  color: #2196f3;
-}
+  /*     @media screen and(max-width:767px) {
+      color: $title-text-color;
 
-@media screen and (max-width: 767px) {
-  .site-nav a.active {
-    color: #212121;
-  }
-  .site-nav a.active:hover, .site-nav a.active:focus {
-    color: #2196f3;
-  }
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    } */
+  color: #2196f3;
 }
 
 .site-nav__link {
@@ -308,6 +319,16 @@ ul {
     line-height: 1.17;
     color: #2196f3;
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 380px) {
+  .site-com .font-tel {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .site-com__mail {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -407,6 +428,20 @@ ul {
 .site-icon__item {
   padding-right: 10px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .site-icon__item {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .site-icon__item {
+    font-size: 10px;
+    line-height: 1.22;
+  }
 }
 
 .site-icon__item + .site-icon__item {
@@ -669,6 +704,12 @@ ul {
   letter-spacing: 0.03em;
   padding: 24px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 335px) {
+  .section-skills__text-content {
+    font-size: 16px;
+  }
 }
 
 .section-skills__flex {
