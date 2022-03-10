@@ -154,7 +154,7 @@
     flex-flow: wrap;
     flex-direction: column;
 
-    margin-top: 302px;
+    margin-top: 160px;
 
     &__tel {
       order: 1;
@@ -245,7 +245,7 @@
   @extend %site;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
+  margin-top: 44px;
   /*   justify-content: space-between; */
 
   @media screen and(min-width:768px) {
