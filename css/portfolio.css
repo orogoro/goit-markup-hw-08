@@ -778,6 +778,7 @@ ul {
 }
 
 .section-skills__link {
+  /*     display: block;  */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
