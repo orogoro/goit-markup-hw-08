@@ -101,7 +101,8 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -130,13 +131,14 @@
   }
 
   &__name {
+    flex-grow: 1;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     padding: 20px;
 
     @media screen and (min-width: 768px) {
-      height: 146px;
+      /*  height: 146px; */
     }
   }
 
